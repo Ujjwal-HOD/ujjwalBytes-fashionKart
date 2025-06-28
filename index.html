@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FashionKart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navBar">
+      <div class="logo">
+        Fashion<span class="highlight">Kart</span>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="navItems" id="navItems">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#product">FASHION</a></li>
+          <!-- <li><a href="#">ABOUT</a></li> -->
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="icons">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- Search Box -->
+<div class="search-box hidden" id="searchBox">
+  <input type="text" placeholder="Search for products..." />
+  <button class="btn">Search</button>
+</div>
+
+<!-- Login Popup -->
+<div class="login-popup hidden" id="loginPopup">
+  <div class="login-form">
+    <h2>Login</h2>
+    <input type="text" placeholder="Email or Username" />
+    <input type="password" placeholder="Password" />
+    <button class="btn">Login</button>
+    <p class="close-btn" id="closeLogin">Close</p>
+  </div>
+</div>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Style That Speaks for You</h1>
+        <p>Discover the latest trends, exclusive collections & fashion that defines YOU.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <div class="left-page1">
+        <img src="/images/hero.png" alt="Hero Image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- page 2  -->
+
+<div class="page2">
+  <h1>Your Ultimate <span class="highlight" id="typed-text"></span><span class="cursor">|</span></h1>
+</div>
+
+
+  <!-- this is card section  -->
+<section class="category-section">
+  <h2 class="section-title">Shop by <span class="highlight">Category</span></h2>
+  <div class="card-container">
+    
+    <!-- ////////////////////men section//////////////////////////// -->
+    
+    <div class="card">
+      <img src="images/hero.png" alt="Men Fashion">
+      <h3>Men</h3>
+      <p>Trendy wear for every occasion.</p>
+      <a href="men.html" class="btn">Explore</a>
+    </div>
+    
+    <!-- ///////////////women section////////////////////// -->
+    
+    <div class="card">
+      <img src="images/she.png" alt="Women Fashion">
+      <h3>Women</h3>
+      <p>Elegant styles curated for you.</p>
+      <a href="women.html" class="btn">Explore</a>
+    </div>
+
+    <!-- ////////////////////kid section//////////////////////////// -->
+    
+    <div class="card">
+      <img src="/images/kid.png" alt="Kids Fashion">
+      <h3>Kids</h3>
+      <p>Cute & comfy fashion for kids.</p>
+      <a href="kids.html" class="btn">Explore</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- yaha pr bhi kuch likhte hain-->
+
+
+<section class="slogan-section">
+  <h1>Premium <span class="highlight">Quality</span>, Affordable <span class="highlight">Prices</span> <br>Wide Range of categories for men, women, and kids</h1>
+</section>
+
+
+<!-- product section -->
+
+<!-- Featured Products Section -->
+<section class="products-section" id="product">
+  <h2 class="section-title">Featured <span class="highlight">Products</span></h2>
+  <div class="products-container">
+    <!-- First Row -->
+    <div class="product-card">
+      <img src="images/jacket.jpg" alt="Product 1">
+      <h3>Classic Denim Jacket</h3>
+      <p class="price">₹1,499</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="images/floral dress.jpg" alt="Product 2">
+      <h3>Summer Floral Dress</h3>
+      <p class="price">₹1,199</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="images/hoodie.jpeg" alt="Product 3">
+      <h3>Kids Cartoon Hoodie</h3>
+      <p class="price">₹799</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <!-- Hidden Extra Products -->
+    <div class="product-card extra-product hidden">
+      <img src="images/shirt.jpg" alt="Product 4">
+      <h3>Men’s Casual Shirt</h3>
+      <p class="price">₹999</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card extra-product hidden">
+      <img src="images/hand bag.jpg" alt="Product 5">
+      <h3>Women’s Handbag</h3>
+      <p class="price">₹1,899</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card extra-product hidden">
+      <img src="images/track suit.jpg" alt="Product 6">
+      <h3>Kids Track Suit</h3>
+      <p class="price">₹849</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Show More Button -->
+  <div class="show-more-container">
+    <button class="btn" id="showMoreBtn">Show More</button>
+  </div>
+</section>
+
+
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\about section  -->
+
+
+
+<section class="about-section" id="about">
+  
+<!-- <section class="about-section"> -->
+  <div class="about-container">
+    <div class="about-image">
+      <img src="images/owner.jpg"" alt="About FashionKart">
+    </div>
+    <div class="about-text">
+      <h2>About Fashion<span class="highlight">Kart</span></h2>
+      <p>
+        FashionKart is your one-stop destination for the latest fashion trends in men's, women's, and kids' clothing.
+        We believe in empowering every individual with style that expresses their personality. With quality fabrics,
+        trendy designs, and fast delivery — we bring the fashion store to your doorstep.
+      </p>
+      <p>
+        Our goal is to deliver fashion that not only looks good but also feels right. Because when you look good, you feel great.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="slogan-section">
+  <h1><br>Easy Returns & 24/7 Support<br>Only on Fashion<span class='highlight'>Kart</span>."</h1>
+</section>
+<!-- this is now contact page  -->
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact <span class="highlight">Us</span></h2>
+      <p>Have a question, feedback, or just want to say hello? Reach out to us — we’re here to help you!</p>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i> sketchujjwal@gmail.com</li>
+        <li><i class="fa-solid fa-phone"></i> +91 9648475061</li>
+        <li><i class="fa-solid fa-location-dot"></i> Prayagraj, India</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- something for the customer -->
+
+
+<section class="slogan-section">
+  <h1>"Shop Smart.<br>Look Stunning.<br>Only on Fashion<span class='highlight'>Kart</span>."</h1>
+</section>
+
+
+<!-- this is footer for the website -->
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>Fashion<span class="highlight">Kart</span></h2>
+      <p>Your style, your way.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/shine_it_uk?igsh=NGVlZG93OHN0bjhk"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/shine_it_uk?igsh=NGVlZG93OHN0bjhk"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ujjwal-kesharwani-4b2b10337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://youtube.com/@artist_uk?si=6w11PHwt8Am4mYrt"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 FashionKart. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navItems = document.getElementById('navItems');
+    hamburger.addEventListener('click', () => {
+      navItems.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
